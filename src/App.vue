@@ -300,51 +300,7 @@ export default {
             fab: false,
             help_dialog: false,
             info_dialog: false,
-            userscripts: [
-                {
-                    title: "FanFiction.net",
-                    gist:
-                        "https://gist.github.com/hkamran80/b78ba189f0319efccaa534952f66ceb0",
-                    raw_gist:
-                        "https://gist.github.com/hkamran80/b78ba189f0319efccaa534952f66ceb0/raw/fanfiction.user.js",
-                    description:
-                        "This script includes keystrokes for page control and the follow / favorite button.",
-                    notes: [
-                        "Shift + N: Next",
-                        "Shift + P: Previous",
-                        "Shift + L: Follow / Favorite Button"
-                    ]
-                },
-                {
-                    title: "FuelEd Brightspace",
-                    gist:
-                        "https://gist.github.com/hkamran80/2a7676a816564832588fde7b43516eba",
-                    raw_gist:
-                        "https://gist.github.com/hkamran80/2a7676a816564832588fde7b43516eba/raw/fueled.user.js",
-                    description:
-                        "A keystroke to enhance your FuelEd Brightspace experience.",
-                    notes: ['Shift + N: Click the big blue "Next" button']
-                },
-                {
-                    title: "Canvas LMS by Instructure",
-                    gist:
-                        "https://gist.github.com/hkamran80/8f0778b0f5379305674742682cb17b5e",
-                    raw_gist:
-                        "https://gist.github.com/hkamran80/8f0778b0f5379305674742682cb17b5e/raw/canvas_lms.user.js",
-                    description: "Pagination keystrokes for the Module pages.",
-                    notes: ["Shift + N: Next", "Shift + P: Previous"]
-                },
-                {
-                    title: "Google Search",
-                    gist:
-                        "https://gist.github.com/hkamran80/c522d3285557070619af9ce5d7df3442",
-                    raw_gist:
-                        "https://gist.github.com/hkamran80/c522d3285557070619af9ce5d7df3442/raw/google_search.user.js",
-                    description:
-                        "Pagination keystrokes for Google Search (Note: This is an in-progress script and does not work fully)",
-                    notes: ["Shift + N: Next", "Shift + P: Previous"]
-                }
-            ]
+            
         };
     },
     methods: {
