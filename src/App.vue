@@ -11,10 +11,15 @@
                         </h3>
                         <v-divider />
 
+                        <v-alert type="info">
+                            A new userscript is available: XKCD Keystrokes
+                        </v-alert>
+                        <v-divider />
+
                         <!-- Userscripts -->
                         <v-spacer />
                         <v-card
-                            v-for="script in userscripts"
+                            v-for="script in $options.userscripts"
                             :key="script.title"
                             class="mx-auto"
                             outlined
@@ -293,16 +298,17 @@
 </template>
 
 <script>
+import userscripts from "@/userscripts.json";
 export default {
     name: "App",
     data: function() {
         return {
             fab: false,
             help_dialog: false,
-            info_dialog: false,
-            
+            info_dialog: false
         };
     },
+    userscripts: userscripts,
     methods: {
         toggle_dark_mode: function() {
             this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
